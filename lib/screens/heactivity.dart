@@ -1,9 +1,11 @@
+// ignore_for_file: unnecessary_new
+
 import 'package:flutter/material.dart';
 
 class HEActivity extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final appTitle = 'HE Activity';
+    const appTitle = 'HE Activity';
     return MaterialApp(
       title: appTitle,
       home: Scaffold(

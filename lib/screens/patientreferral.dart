@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 class PatientReferral extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final appTitle = 'Patient Referral';
+    const appTitle = 'Patient Referral';
     return MaterialApp(
       title: appTitle,
       home: Scaffold(
         appBar: AppBar(
-          title: Text(appTitle),
+          title: const Text(appTitle),
         ),
         body: PatientReferralForm(),
       ),
@@ -127,9 +127,10 @@ class PatientReferralFormState extends State<PatientReferralForm> {
               });
             },
           ),
+          // ignore: unnecessary_new
           new Container(
               padding: const EdgeInsets.only(left: 150.0, top: 40.0),
-              child: new RaisedButton(
+              child: RaisedButton(
                 child: const Text('Submit'),
                 onPressed: null,
               )),
@@ -138,3 +139,5 @@ class PatientReferralFormState extends State<PatientReferralForm> {
     );
   }
 }
+
+

@@ -4,24 +4,6 @@ import 'package:firebase_dynamic_links/firebase_dynamic_links.dart';
 
 final FirebaseAuth _auth = FirebaseAuth.instance;
 
-
-// class Login extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: 'Patient App',
-//       home: LoginPage(title: 'Patient Record App'),
-//     );
-//   }
-// }
-
-// class Login extends StatefulWidget {
-//   Login({Key key, this.title}) : super(key: key);
-//   final String title;
-//   @override
-//   _LoginState createState() => _LoginState();
-// }
-
 class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

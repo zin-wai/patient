@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../screens/login.dart';
+// import '../screens/login.dart';
+import '../screens/patientreferral.dart';
+import '../screens/heactivity.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -24,7 +26,9 @@ class _HomeState extends State<Home> {
                   'Patient Referral',
                   style: TextStyle(fontSize: 20.0),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  _navigateToPatientReferral(context);
+                },
               ),
             ),
             Container(
@@ -36,10 +40,22 @@ class _HomeState extends State<Home> {
                 ),
                 color: Colors.blueAccent,
                 textColor: Colors.white,
-                onPressed: () {},
+                onPressed: () {
+                  _navigateToHEActivity(context);
+                },
               ),
             ),
           ]))),
     );
   }
+}
+
+void _navigateToPatientReferral(BuildContext context) {
+  Navigator.of(context)
+      .push(MaterialPageRoute(builder: (context) => PatientReferral()));
+}
+
+void _navigateToHEActivity(BuildContext context) {
+  Navigator.of(context)
+      .push(MaterialPageRoute(builder: (context) => HEActivity()));
 }
